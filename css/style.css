@@ -1,0 +1,139 @@
+body,html{
+  height:100%;
+  margin:0;
+  line-height:1.5em;
+  font-weight:400;
+  font-size:16px;
+  font-family: "Lato" sans-serif;
+  color:#666;
+}
+.pimg1,.pimg2,.pimg3{
+  position: relative;
+  opacity:0.7;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.pimg1{
+  background-image:url('../img/image1.jpeg');
+  min-height:100%;
+  position: relative;
+}
+
+.pimg2{
+  background-image:url('../img/image2.jpeg');
+  min-height:400px;
+}
+
+.pimg3{
+  background-image:url('../img/image3.jpg');
+  min-height:400px;
+}
+
+.flex-container{
+  display: flex;
+  justify-content: center;
+}
+
+.flex-container > li {
+  text-align: center;
+}
+
+.nav-pills{
+  font-family: Lato;
+  font-size: 1.7em;
+  background-color: #111;
+}
+
+.nav-pills a{
+  color:white;
+  background-color:#111;
+  letter-spacing:6px;
+  text-transform:uppercase;
+}
+.section-dark > div{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section-dark > div {
+  display: inline-block;
+  margin-bottom: 8px;
+  width: calc(50% - 4px);
+  margin-right: 8px;
+  text-decoration: none;
+  color: black;
+}
+
+
+img {
+  border: none;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  transition: transform .2s ease-in-out;
+  padding:20px;
+}
+
+img.resize {
+  max-width:50%;
+  max-height:50%;
+  margin:0 auto;
+}
+
+figcaption > a {
+  margin-bottom: 50px;
+  color:white;
+}
+
+.ptext{
+  position: absolute;
+  text-align:center;
+  top:50%;
+  width:100%;
+  color:#000;
+  font-size:27px;
+  letter-spacing:8px;
+  text-transform:uppercase;
+}
+
+.ptext .border{
+  background-color:#111;
+  color:#fff;
+  padding:20px;
+}
+
+.section{
+  text-align:center;
+  padding:50px 80px;
+}
+
+.section-light{
+  background-color:#f4f4f4;
+  color:#666;
+}
+
+.section-dark{
+  background-color:#282e34;
+  color:#ddd;
+}
+
+.footer{
+  background-color:  #111;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer > span{
+  color:white;
+  font-size: 1.7em;
+  text-transform:uppercase;
+  letter-spacing:8px;
+  text-transform:uppercase;
+}
