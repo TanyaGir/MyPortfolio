@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <title>Simple Parallax</title>
+</head>
+<body>
+  <div class="pimg1">
+    <div class="flex-container">
+      <div class="nav nav-pills">
+        <li class="pull-right">
+          <a href="#contact">Contact me</a>
+        </li>
+        <li class="pull-right">
+          <a href="#portfolio">Portfolio</a>
+        </li>
+        <li class="pull-right">
+          <a href="#about">About me</a>
+        </li>
+      </div>
+    </div>
+    <div class="ptext">
+      <span class="border">Tanya Sharma</span>
+    </div>
+  </div>
+
+  <section class="section section-light">
+    <h2><a id="about"></a>About Me</h2>
+      <p>
+         As a sef-taught Full Stack Web Developer my journey started with my interest in web technologies.
+         I was so intriguied by the the idea of being able ot build complex web apps that I
+         completed a certification with Udacity for a Full Stack Web Developer. Building complex web apps to provide
+         business solution is what I look forward to do every single day. I am also a wife to supportive and loving husband
+         and a mother of 2 wonderful daughters .
+      </p>
+  </section>
+  <div class="pimg2">
+    <div class="ptext">
+
+    </div>
+  </div>
+
+  <section class="section section-dark">
+    <h2><a id="portfolio"></a>Portfolio</h2>
+    <div>
+        <figure>
+          <figcaption><a href="https://tanyagir.github.io/Neighbourhood_Map/">The neighbourhood map can be used as a responsive web app to view the
+neighbourhood of a given location.</a></figcaption>
+          <img class="resize" src="C:/Users/Tanya Sharma/Desktop/MyWorkspace/paused month/simpleparallax1/simpleparallax1/img/map.png">
+        </figure>
+        <figure>
+          <figcaption><a href="http://ec2-18-188-139-111.us-east-2.compute.amazonaws.com">Catalog Item is a dynamic web application which displays a catalog of restaurants and the menu
+items</a></figcaption>
+          <img class="resize" src="C:/Users/Tanya Sharma/Desktop/MyWorkspace/paused month/simpleparallax1/simpleparallax1/img/restaurant.png">
+        </figure>
+        <figure>
+          <figcaption><a href="https://tanyagir.github.io/Portfolio/">The responsive​ portfolio site displays a portfolio based on the design mockup</a></figcaption>
+          <img class="resize" src="C:/Users/Tanya Sharma/Desktop/MyWorkspace/paused month/simpleparallax1/simpleparallax1/img/portfolio.png">
+        </figure>
+    </div>
+  </section>
+
+  <div class="pimg3">
+    <div class="ptext">
+      
+    </div>
+  </div>
+
+  <section class="section section-dark">
+    <h2><a id="contact"></a>Contact Me</h2>
+      <h3>
+         Email  <br>
+         <u>tanyagir24@gmail.com</u>
+      </h3>
+  </section>
+
+  <div class="pimg1">
+    <div class="ptext">
+      <span class="border">Tanya Sharma</span>
+    </div>
+    <div class="footer">
+      <span>&copy;2018 Tanya Shrama</span>
+    </div>
+  </div>
+<script>
+$('a[href^="#"]').on('click', function(event) {
+    var target = $(this.getAttribute('href'));
+    if( target.length ) {
+        event.preventDefault();
+        $('html, body').stop().animate({
+            scrollTop: target.offset().top
+        }, 800);
+    }
+});
+</script>
+</body>
+</html>
